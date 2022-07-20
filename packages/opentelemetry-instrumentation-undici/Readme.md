@@ -26,7 +26,6 @@ import { UndiciInstrumentation } from "opentelemetry-instrumentation-undici";
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
 
 registerInstrumentations({
-  tracerProvider,
   instrumentations: [
     new UndiciInstrumentation({
       // see below for configuration options
